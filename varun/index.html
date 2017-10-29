@@ -1,46 +1,50 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="a page for exploring basic HTML document">
+ <html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Formatting page content</title>
+   </head>
+   <body>
+        <img src="./img/pulpitrock.jpg" alt="Mountain View" width="800" height="60">
+        <h1> HTML Essential Training</h1>
+        <h2>Formatting page content</h2>
+            <p>In this series of exercises, w'll explore how to use HTMLelements to format basic page content.</p>
+            <b> Adding headings</b>
+            <p>Headings help define the structure of the page and controlthe hierarchy of the content.
+            You can use  heading values ranging from a top-level heading of h1 all the way down to an h6.
+            While there are several competing theories on the exact strategy to use when choosing headings,
+            what really matters is that you are using them in an intelligent manner,to
+            paragraph of text, and should be used for each individual paragraph.
+            <b>Line breaks</b>
+            <p>Occasionally you'll need to perform a "soft return," that
+            is,create a new line without using a new paragraph.To do 
+            that in HTML, you use the line break tag (&lang;br&rang;).</p>
+            <p>Line break tags are inline, meaning you can use them within
+            headers and paragraphs, and don't require a closing tag.</p>
+            <p>Let's say you were formatting an address, for example.
+            You could use line breaks to make sure each line of the address
+            appeared on a separate line, but still remained within the 
+            same paragraph.
+            Lynda.com 6410 Via Real Carpinteria,CA 93103.
+            <a href="../gargi/index2.html" title"Index">Go to the back page</a>
 
-        <title>Varun's Web Page</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <h1>Maintained by Rupesh</h1>
-        <p>In HTML 4 there were only two main content models,
-            block and inline level elements.<b>Block level</b> elements
-            would stack on top of each other in normal document flow while
-            <b>inline level</b> elements typically appear within the flow
-            of text content.
-        </p>
-        <p>In this example the <b>heading 1</b> and the
-            <b>paragraphs</b> are block level items, while the bold tags
-            and the link below are examples of inline level elements.
-        </p> 
-        <p> In HTMLS now content nodel have been created to expand the structure and semantic 
-            capabilities of HTML. There are seven main models: <em>Flow, Metadata,Embedded,
-            Interactive, Heading, Phrasing, and sectioning</em>>. To learn more about them, visit the 
-            <a href="./varun/index3.html" title="Index 3">Go to the next file</a>
-            contained in the W3C HTML5 specification.
-        </p>
-        <div id="toc_container">
-            <p class="toc_title">Table of Contents</p>
-                <ul class="toc_list"">
-                    <li><a href="./varun/index3.html">1. Varun's Home Page</a>
-                        <ul>
-                            <li><a href="#First_Sub_Point_1">1.1 Bad Comapany</a></li>
-                            <li><a href="#First_Sub_Point_2">1.2 Structure of Atom</a></li>
+            <div id="toc_container">
+                    <p class="toc_title">Table of Contents</p>
+                        <ul class="toc_list"">
+                            <li><a href="./structure-of-atom.html">1. Structure of Atom</a>
+                                <ul>
+                                    <li><a href="#First_Sub_Point_1">1.1 Neutron</a></li>
+                                    <li><a href="#First_Sub_Point_2">1.2 Atom</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./mongoose-and-snake.html">2. Mongoose and Snake</a></li>
+                                <ul>
+                                    <li><a href="#First_Sub_Point_1">1.1 Mongoose</a></li>
+                                    <li><a href="#First_Sub_Point_2">1.2 Snake</a></li>
+                                </ul>
+                            <li><a href="#Third_Point_Header">3. Third Point Header</a></li>
                         </ul>
-                    </li>
-                    <li><a href="./gargi/index2.html">2. Gargi's Home Page</a></li>
-                        <ul>
-                            <li><a href="#First_Sub_Point_1">1.1 The Rich Lady and the Artist</a></li>
-                            <li><a href="#First_Sub_Point_2">1.2 The Curious Town</a></li>
-                        </ul>
-                    <li><a href="#Third_Point_Header">3. Third Point Header</a></li>
-                </ul>
-        </div>
+            </div>
     </body>
 </html>
+    
